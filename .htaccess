@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Disable directory listing
+Options -Indexes
+
+# 404 Page not found on directory requests except for css, images, js ang log files.
+# All requests matching an application directory name will be handled as an URL request.
+RewriteCond %{REQUEST_URI} (App/|Configuration/|Core/|app/|configuration/)
+RewriteCond %{REQUEST_URI} !(css|images|js|log)
+RewriteRule ^(.*)$ %{REQUEST_URI}404/ [QSD]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]

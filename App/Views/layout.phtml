@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title><?= \Core\View::getPageTitle() ?></title>
+        <meta name="Keywords" content="<?= \Core\View::getMetaKeywords() ?>">
+        <meta name="Description" content="<?= \Core\View::getMetaDescription() ?>">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <?= \Core\View::getStyleSheetHTML() ?>
+        <?= \Core\View::getJavaScriptHTML() ?>
+    </head>
+    <body>
+        <div>{{%VIEWBLOCK%}}</div>
+    </body>
+</html>
