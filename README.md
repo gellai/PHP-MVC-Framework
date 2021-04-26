@@ -3,7 +3,7 @@
 [![N|Gellai](https://www.gellai.com/wp-content/themes/gellai/images/Powered-By-Gellai.png)](https://gellai.com)
 
 ## What is this?
-An MVC skeleton framework for PHP applications.
+An MVC skeleton framework for PHP applications (beta).
 
 Features
 - Easily extendable
