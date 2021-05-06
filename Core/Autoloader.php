@@ -18,8 +18,8 @@ class Autoloader
             $class = ltrim($class, '\\');
 
             $classPath = Config::getBasePath()
-                         . DIRECTORY_SEPARATOR
-                         . str_replace('\\', DIRECTORY_SEPARATOR, $class)
+                         . __DS__
+                         . str_replace('\\', __DS__, $class)
                          . ".php";            
 
             if(is_file($classPath)) {
